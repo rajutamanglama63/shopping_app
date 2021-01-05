@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Port+Lligat+Slab&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Port Lligat Slab", serif;
+}
+
+/*============== Navbar styling ==============*/
+
+.navbar {
+  background-color: rgb(9, 139, 253);
+}
+.container {
+  /* border: 1px solid green; */
+  margin: 0 auto;
+  width: 70%;
+}
+.nav-content {
+  display: flex;
+  justify-content: space-between;
+}
+.brand {
+  /* border: 1px dotted blue; */
+  margin: 0.5rem 0;
+  padding: 0.7rem;
+}
+.menu {
+  /* border: 1px dotted blue; */
+  margin: 0.5rem 0;
+  padding: 1rem;
+}
+ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+}
+.cart-btn a {
+  text-decoration: none;
+  border: 1px solid black;
+  border-radius: 10px;
+  background-color: #707070;
+  padding: 0.5rem;
+  color: #fff;
+}
+.cart-btn a:hover {
+  background-color: #fff;
+  color: #000000;
+}
+.cart {
+  padding: 0 0.5rem;
+}
+.number {
+  border: 1px solid #000000;
+  border-radius: 50%;
+  text-align: center;
+}
+.shop {
+  padding-left: 1rem;
+}
+.shop a {
+  text-decoration: none;
+  color: #fff;
+}
+.shop a:hover {
+  color: #000;
+}
+.hamberger-menu {
+  /* border: 1px dotted blue; */
+  display: none;
+  margin: 0.5rem 0;
+}
+.ham-menu {
+  margin: 0.5rem 0;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+.ham-menu > div {
+  width: 100%;
+  height: 3px;
+  background-color: #000;
+}
+.ham-menu:hover > div {
+  background-color: #fff;
+}
+
+/* ============== mediaQuery ================ */
+
+@media (max-width: 750px) {
+  .hamberger-menu {
+    display: flex;
+  }
+  .menu {
+    display: none;
+  }
+}
+@media (max-width: 400px) {
+  .brand h1 {
+    font-size: larger;
+  }
+}
